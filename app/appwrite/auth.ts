@@ -39,6 +39,8 @@ export const storeUserData = async () => {
       }
     );
 
+    
+
     if (!createdUser.$id) redirect("/sign-in");
 
     return createdUser;
