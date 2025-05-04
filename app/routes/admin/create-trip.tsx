@@ -14,7 +14,7 @@ import { comboBoxItems, selectItems } from "~/constants";
 import { world_map } from "~/constants/world_map";
 import type { Route } from "./+types/create-trip";
 
-export const loader = async () => {
+export const clientLoader = async () => {
 	const response = await fetch("https://restcountries.com/v3.1/all");
 
 	const data = await response.json();
