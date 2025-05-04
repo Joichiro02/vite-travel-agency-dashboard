@@ -18,9 +18,9 @@ export default function AllUsers({ loaderData }: Route.ComponentProps) {
 	const { users } = loaderData;
 
 	return (
-		<main className="dashboard wrapper">
+		<main className="all-users wrapper">
 			<Header
-				title={"Manage Users"}
+				title="Manage Users"
 				description="Filter, sort, and access detailed user profiles"
 			/>
 			<GridComponent dataSource={users} gridLines="None">
