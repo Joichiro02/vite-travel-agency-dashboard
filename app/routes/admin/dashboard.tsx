@@ -12,6 +12,10 @@ export async function clientLoader() {
 	return await getUser();
 }
 
+export async function loader() {
+	throw new Error("some error thrown in a loader");
+}
+
 export default function Dashboard({ loaderData }: Route.ComponentProps) {
 	const user = loaderData as unknown as User | null;
 	return (
