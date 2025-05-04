@@ -31,8 +31,8 @@ export const loader = async ({ params }: LoaderFunctionArgs) => {
 };
 
 export default function TripDetail({ loaderData }: Route.ComponentProps) {
-	const imageUrls = loaderData?.trip?.imageUrls || [];
-	const allTrips = (loaderData?.allTrips as Trip[]) || [];
+	const imageUrls = loaderData?.trip?.imageUrls | [];
+	const allTrips = (loaderData?.allTrips as Trip[]) | [];
 	const tripData = parseTripData(loaderData?.trip?.tripDetails);
 
 	const {
