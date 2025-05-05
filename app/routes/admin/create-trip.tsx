@@ -236,6 +236,7 @@ export default function CreateTrip({ loaderData }: Route.ComponentProps) {
 									loading ? "loader.svg" : "magic-star.svg"
 								}`}
 								className={cn("size-5", { "animate-spin": loading })}
+								referrerPolicy="no-referrer"
 							/>
 							<span className="p-16-semibold text-white">
 								{loading ? "Generating..." : "Generate Trip"}
