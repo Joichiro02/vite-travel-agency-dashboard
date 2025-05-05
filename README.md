@@ -11,10 +11,6 @@
     <img src="https://img.shields.io/badge/-Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" />
   </div>
   <h3 align="center">Travel Agency Platform</h3>
-
-  <div align="center">
-     A modern travel agency platform with an admin dashboard and public site. Generate AI-powered trip itineraries based on country, travel style, interests, group type, and budget — and book trips   with ease.
-  </div>
 </div>
 
 ## Features
