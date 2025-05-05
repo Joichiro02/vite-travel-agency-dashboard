@@ -24,7 +24,7 @@ export default function TripCard({
 			}
 			className="trip-card"
 		>
-			<img src={imageUrl} alt={name} />
+			<img src={imageUrl} alt={name} referrerPolicy="no-referrer" />
 
 			<article>
 				<h2>{name}</h2>
@@ -33,6 +33,7 @@ export default function TripCard({
 						src={`/assets/icons/location-mark.svg`}
 						alt="location"
 						className="size-4"
+						referrerPolicy="no-referrer"
 					/>
 					<figcaption>{location}</figcaption>
 				</figure>

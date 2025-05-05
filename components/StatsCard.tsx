@@ -25,6 +25,7 @@ export default function StatsCard({
 								src={`/assets/icons/${
 									isDecrement ? "arrow-down-red.svg" : "arrow-up-green.svg"
 								}`}
+								referrerPolicy="no-referrer"
 							/>
 							<figcaption
 								className={cn(
@@ -47,6 +48,7 @@ export default function StatsCard({
 					}`}
 					className="xl:w-32 w-full h-full md:h-32 xl:h-full"
 					alt="trend graph"
+					referrerPolicy="no-referrer"
 				/>
 			</div>
 		</article>

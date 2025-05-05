@@ -49,6 +49,7 @@ const FeaturedDestination = ({
 							className={cn("size-4 rounded-full aspect-square", {
 								"size-11": bigCard,
 							})}
+							referrerPolicy="no-referrer"
 						/>
 						<p
 							className={cn("text-xs font-normal text-white", {
@@ -222,6 +223,7 @@ export default function TravelPage({ loaderData }: Route.ComponentProps) {
 							src="/assets/icons/logo.svg"
 							alt="logo"
 							className="size-[30px]"
+							referrerPolicy="no-referrer"
 						/>
 						<h1>Tourvisto</h1>
 					</Link>

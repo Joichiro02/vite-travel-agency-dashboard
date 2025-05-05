@@ -18,12 +18,18 @@ export default function MobileSidebar() {
 						src="/assets/icons/logo.svg"
 						alt="Logo"
 						className="size-[30px]"
+						referrerPolicy="no-referrer"
 					/>
 					<h1>Tourvisto</h1>
 				</Link>
 
 				<button onClick={toggleSidebar}>
-					<img src="/assets/icons/menu.svg" alt="Menu" className="size-7" />
+					<img
+						src="/assets/icons/menu.svg"
+						alt="Menu"
+						className="size-7"
+						referrerPolicy="no-referrer"
+					/>
 				</button>
 			</header>
 

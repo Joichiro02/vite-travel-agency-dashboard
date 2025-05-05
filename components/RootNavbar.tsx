@@ -34,6 +34,7 @@ export default function RootNavbar() {
 						src="/assets/icons/logo.svg"
 						alt="logo"
 						className="size-[30px]"
+						referrerPolicy="no-referrer"
 					/>
 					<h1>Tourvisto</h1>
 				</Link>
@@ -61,6 +62,7 @@ export default function RootNavbar() {
 							src="/assets/icons/logout.svg"
 							alt="logout"
 							className="size-6 rotate-180"
+							referrerPolicy="no-referrer"
 						/>
 					</button>
 				</aside>

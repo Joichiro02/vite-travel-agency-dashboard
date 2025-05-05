@@ -5,7 +5,7 @@ import {
 	ChipsDirective,
 } from "@syncfusion/ej2-react-buttons";
 import { Header, InfoPill, TripCard } from "components";
-import { getFirstWord, parseTripData } from "lib/utils";
+import { cn, getFirstWord, parseTripData } from "lib/utils";
 import type { LoaderFunctionArgs } from "react-router";
 import { getAllTrips, getTripById } from "~/appwrite/trips";
 import type { Route } from "./+types/trip-detail";
@@ -31,8 +31,8 @@ export const loader = async ({ params }: LoaderFunctionArgs) => {
 };
 
 export default function TripDetail({ loaderData }: Route.ComponentProps) {
-	const imageUrls = loaderData?.trip?.imageUrls | [];
-	const allTrips = (loaderData?.allTrips as Trip[]) | [];
+	const imageUrls = loaderData?.trip?.imageUrls || [];
+	const allTrips = (loaderData?.allTrips as Trip[]) || [];
 	const tripData = parseTripData(loaderData?.trip?.tripDetails);
 
 	const {
@@ -99,6 +99,7 @@ export default function TripDetail({ loaderData }: Route.ComponentProps) {
 									? "md:col-span-2 md:row-span-2 h-[330px]"
 									: "md:row-span-1 h-[150px]",
 							)}
+							referrerPolicy="no-referrer"
 						/>
 					))}
 				</section>
@@ -125,6 +126,7 @@ export default function TripDetail({ loaderData }: Route.ComponentProps) {
 										src="/assets/icons/star.svg"
 										alt="star"
 										className="size-[18px]"
+										referrerPolicy="no-referrer"
 									/>
 								</li>
 							))}

@@ -19,7 +19,12 @@ export default function NavItems({ handleClick }: NavItemsProps) {
 	return (
 		<section className="nav-items">
 			<Link to="/" className="link-logo">
-				<img src="/assets/icons/logo.svg" alt="Logo" className="size-[30px]" />
+				<img
+					src="/assets/icons/logo.svg"
+					alt="Logo"
+					className="size-[30px]"
+					referrerPolicy="no-referrer"
+				/>
 				<h1>Tourvisto</h1>
 			</Link>
 
@@ -40,6 +45,7 @@ export default function NavItems({ handleClick }: NavItemsProps) {
 										className={`group-hover:brightness-0 size-7 group-hover:invert ${
 											isActive ? "brightness-0 invert" : "text-dark-200"
 										}`}
+										referrerPolicy="no-referrer"
 									/>
 									{label}
 								</div>
@@ -63,6 +69,7 @@ export default function NavItems({ handleClick }: NavItemsProps) {
 							src="/assets/icons/logout.svg"
 							alt="Logout"
 							className="size-6"
+							referrerPolicy="no-referrer"
 						/>
 					</button>
 				</footer>

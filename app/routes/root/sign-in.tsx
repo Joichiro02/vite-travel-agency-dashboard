@@ -24,6 +24,7 @@ export default function SignIn() {
 								src="/assets/icons/logo.svg"
 								alt="Logo"
 								className="size-[30px]"
+								referrerPolicy="no-referrer"
 							/>
 						</Link>
 						<h1 className="p-28-bold text-dark-100">Tourvisto</h1>
@@ -49,6 +50,7 @@ export default function SignIn() {
 							src="/assets/icons/google.svg"
 							alt="Google"
 							className="size-5"
+							referrerPolicy="no-referrer"
 						/>
 						<span className="p-18-semibold text-white">
 							Sign in with Google
