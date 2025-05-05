@@ -1,8 +1,21 @@
-# Welcome to React Router!
+<div align="center">
+  <br />
+    <a href="https://www.youtube.com/watch?v=xZ1ba-RLrjo" target="_blank">
+      <img src="public/assets/images/readme.png" alt="Project Banner">
+    </a>
+  <br />
+  <div>
+    <img alt="Static Badge" src="https://img.shields.io/badge/React-4c84f3?style=for-the-badge&logo=react&logoColor=white">
+    <img alt="Static Badge" src="https://img.shields.io/badge/Appwrite-f05695?style=for-the-badge&logo=appwrite&logoColor=white">
+    <img alt="Static Badge" src="https://img.shields.io/badge/Syncfusion-181758?style=for-the-badge&logoColor=white">
+    <img src="https://img.shields.io/badge/-Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" />
+  </div>
+  <h3 align="center">Travel Agency Platform</h3>
 
-A modern, production-ready template for building full-stack React applications using React Router.
-
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
+  <div align="center">
+     Build this project step by step with our detailed tutorial on <a href="https://www.youtube.com/@javascriptmastery/videos" target="_blank"><b>JavaScript Mastery</b></a> YouTube. Join the JSM family!
+    </div>
+</div>
 
 ## Features
 
