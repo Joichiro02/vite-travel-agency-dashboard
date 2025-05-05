@@ -34,6 +34,12 @@ export function Layout({ children }: { children: React.ReactNode }) {
 			<head>
 				<meta charSet="utf-8" />
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
+				<title>Tourvisto</title>
+				<meta
+					name="description"
+					content="A modern travel agency platform with an admin dashboard and public site. Generate AI-powered trip itineraries based on country, travel style, interests, group type, and budget — and book trips with ease."
+				/>
+				<link rel="icon" href="/assets/icons/logo.svg" />
 				<Meta />
 				<Links />
 			</head>
