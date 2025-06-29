@@ -1,10 +1,6 @@
 import { ButtonComponent } from "@syncfusion/ej2-react-buttons";
 import { ComboBoxComponent } from "@syncfusion/ej2-react-dropdowns";
-import {
-	LayerDirective,
-	LayersDirective,
-	MapsComponent,
-} from "@syncfusion/ej2-react-maps";
+import { LayerDirective, LayersDirective, MapsComponent } from "@syncfusion/ej2-react-maps";
 import { Header } from "components";
 import { cn, formatKey } from "lib/utils";
 import { useState } from "react";
@@ -15,7 +11,7 @@ import { world_map } from "~/constants/world_map";
 import type { Route } from "./+types/create-trip";
 
 export const clientLoader = async () => {
-	const response = await fetch("https://restcountries.com/v3.1/all");
+	const response = await fetch("https://restcountries.com/v3.1/all?fields=name,flag,latlng,maps");
 
 	const data = await response.json();
 
@@ -109,18 +105,13 @@ export default function CreateTrip({ loaderData }: Route.ComponentProps) {
 		{
 			country: formData.country,
 			color: "#EA382E",
-			coordinates:
-				countries.find((c: Country) => c.name === formData.country)
-					?.coordinates || [],
+			coordinates: countries.find((c: Country) => c.name === formData.country)?.coordinates || [],
 		},
 	];
 
 	return (
 		<main className="flex flex-col gap-10 pb-20 wrapper">
-			<Header
-				title="Add a New Trip"
-				description="View and edit AI Generated travel plans"
-			/>
+			<Header title="Add a New Trip" description="View and edit AI Generated travel plans" />
 
 			<section className="mt-2.5 wrapper-md">
 				<form className="trip-form" onSubmit={handleSubmit}>
@@ -142,13 +133,11 @@ export default function CreateTrip({ loaderData }: Route.ComponentProps) {
 								const query = e.text.toLowerCase();
 								e.updateData(
 									countries
-										.filter((country) =>
-											country.name.toLowerCase().includes(query),
-										)
+										.filter((country) => country.name.toLowerCase().includes(query))
 										.map((country) => ({
 											text: country.name,
 											value: country.value,
-										})),
+										}))
 								);
 							}}
 						/>
@@ -192,7 +181,7 @@ export default function CreateTrip({ loaderData }: Route.ComponentProps) {
 											.map((item) => ({
 												text: item,
 												value: item,
-											})),
+											}))
 									);
 								}}
 							/>
@@ -232,9 +221,7 @@ export default function CreateTrip({ loaderData }: Route.ComponentProps) {
 							disabled={loading}
 						>
 							<img
-								src={`/assets/icons/${
-									loading ? "loader.svg" : "magic-star.svg"
-								}`}
+								src={`/assets/icons/${loading ? "loader.svg" : "magic-star.svg"}`}
 								className={cn("size-5", { "animate-spin": loading })}
 								referrerPolicy="no-referrer"
 							/>
